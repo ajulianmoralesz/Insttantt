@@ -55,6 +55,7 @@ namespace Insttantt.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Code = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
                     ModifiedBy = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -98,7 +99,6 @@ namespace Insttantt.DataAccess.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdFlow = table.Column<int>(type: "int", nullable: false),
-                    IsDone = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
                     ModifiedBy = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -155,7 +155,6 @@ namespace Insttantt.DataAccess.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdField = table.Column<int>(type: "int", nullable: false),
                     IdFlowStep = table.Column<int>(type: "int", nullable: false),
-                    DefaultValue = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true, defaultValue: ""),
                     IsOutput = table.Column<bool>(type: "bit", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
@@ -216,54 +215,70 @@ namespace Insttantt.DataAccess.Migrations
                 columns: new[] { "Id", "Active", "Code", "CreatedBy", "CreatedOn", "ModifiedBy", "ModifiedOn", "Name" },
                 values: new object[,]
                 {
-                    { 1, true, "F-0001", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1167), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1176), "Primer Nombre" },
-                    { 2, true, "F-0002", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1178), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1179), "Segundo Nombre" },
-                    { 3, true, "F-0003", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1181), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1181), "Primer Apellido" },
-                    { 4, true, "F-0004", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1183), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1184), "Segundo Apellido" },
-                    { 5, true, "F-0005", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1185), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1186), "Tipo de Documento" },
-                    { 6, true, "F-0006", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1188), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1188), "Numero Documento" },
-                    { 7, true, "F-0007", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1190), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1191), "Correo Electronico" },
-                    { 8, true, "F-0008", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1192), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1193), "Url" },
-                    { 9, true, "F-0009", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1195), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1196), "Metodo" },
-                    { 10, true, "F-00010", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1197), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1198), "Body" },
-                    { 11, true, "F-0011", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1200), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1200), "Cliente SMTP" },
-                    { 12, true, "F-0012", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1202), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1203), "Puerto" },
-                    { 13, true, "F-0013", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1204), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1205), "Email From" },
-                    { 14, true, "F-0014", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1207), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1207), "Password" },
-                    { 15, true, "F-0015", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1209), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1210), "Mensaje" },
-                    { 16, true, "F-0016", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1211), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1212), "Asunto" },
-                    { 17, true, "F-0017", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1214), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1214), "Valor X" },
-                    { 18, true, "F-0018", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1216), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1217), "Valor Y" },
-                    { 19, true, "F-0019", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1219), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1219), "Resultado Suma" },
-                    { 20, true, "F-0020", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1223), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1224), "Resultado Resta" },
-                    { 21, true, "F-0021", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1225), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1226), "Resultado Multiplicación" },
-                    { 22, true, "F-0022", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1228), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1228), "Resultado División" }
+                    { 1, true, "F-0001", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3266), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3274), "Valor X" },
+                    { 2, true, "F-0002", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3307), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3307), "Valor Y" },
+                    { 3, true, "F-0003", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3309), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3310), "Resultado Suma" },
+                    { 4, true, "F-0004", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3311), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3312), "Resultado Resta" },
+                    { 5, true, "F-0005", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3313), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3314), "Resultado Multiplicación" },
+                    { 6, true, "F-0006", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3315), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3316), "Resultado División" },
+                    { 7, true, "F-0007", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3317), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3318), "Resultado Compuesta" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Flow",
+                columns: new[] { "Id", "Active", "CreatedBy", "CreatedOn", "Description", "ModifiedBy", "ModifiedOn", "Name" },
+                values: new object[] { 1, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(7266), "Flujo con operaciones matematicas que dependen de la primera entrada de variables", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(7269), "Flujo de Prueba" });
 
             migrationBuilder.InsertData(
                 table: "Step",
-                columns: new[] { "Id", "Active", "Code", "CreatedBy", "CreatedOn", "ModifiedBy", "ModifiedOn", "Name" },
+                columns: new[] { "Id", "Active", "Code", "CreatedBy", "CreatedOn", "ModifiedBy", "ModifiedOn", "Name", "Url" },
                 values: new object[,]
                 {
-                    { 1, true, "STP-0001", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6132), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6146), "Formulario Usuario" },
-                    { 2, true, "STP-0002", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6148), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6149), "Consumir Servicio Externo" },
-                    { 3, true, "STP-0003", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6150), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6151), "Enviar Email" },
-                    { 4, true, "STP-0004", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6152), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6153), "Enviar Valores" },
-                    { 5, true, "STP-0005", "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6154), "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6155), "Ejecutar Ecuación" }
+                    { 1, true, "STP-0001", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5701), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5704), "Enviar Valores", "https://localhost:7285/api/Parameters/inputparameters" },
+                    { 2, true, "STP-0002", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5705), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5706), "Sumar", "https://localhost:7285/api/Operation/adittion" },
+                    { 3, true, "STP-0003", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5707), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5708), "Restar", "https://localhost:7285/api/Operation/subtraction" },
+                    { 4, true, "STP-0004", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5709), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5710), "Multiplicar", "https://localhost:7285/api/Operation/multiplication" },
+                    { 5, true, "STP-0005", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5711), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5712), "Dividir", "https://localhost:7285/api/Operation/division" },
+                    { 6, true, "STP-0005", "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5713), "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5714), "Operacion Compuesta", "https://localhost:7285/api/Operation/compound" }
                 });
 
             migrationBuilder.InsertData(
-                table: "FieldOptionValue",
-                columns: new[] { "Id", "Active", "CreatedBy", "CreatedOn", "IdField", "ModifiedBy", "ModifiedOn", "Value" },
+                table: "FlowStep",
+                columns: new[] { "Id", "Active", "CreatedBy", "CreatedOn", "IdFlow", "IdStep", "ModifiedBy", "ModifiedOn" },
                 values: new object[,]
                 {
-                    { 1, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4791), 5, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4796), "CC" },
-                    { 2, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4798), 5, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4798), "NIT" },
-                    { 3, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4800), 5, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4800), "TI" },
-                    { 4, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4802), 9, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4802), "GET" },
-                    { 5, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4804), 9, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4804), "POST" },
-                    { 6, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4806), 9, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4806), "PUT" },
-                    { 7, true, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4808), 9, "unknow", new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4808), "DELETE" }
+                    { 1, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9037), 1, 1, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9041) },
+                    { 2, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9043), 1, 2, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9043) },
+                    { 3, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9045), 1, 3, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9045) },
+                    { 4, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9046), 1, 4, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9047) },
+                    { 5, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9048), 1, 5, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9049) },
+                    { 6, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9050), 1, 6, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9051) }
+                });
+
+            migrationBuilder.InsertData(
+                table: "FlowStepField",
+                columns: new[] { "Id", "Active", "CreatedBy", "CreatedOn", "IdField", "IdFlowStep", "IsOutput", "ModifiedBy", "ModifiedOn" },
+                values: new object[,]
+                {
+                    { 1, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4114), 1, 1, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4120) },
+                    { 2, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4122), 2, 1, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4123) },
+                    { 3, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4124), 1, 2, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4125) },
+                    { 4, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4126), 2, 2, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4127) },
+                    { 5, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4128), 3, 2, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4129) },
+                    { 6, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4130), 1, 3, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4131) },
+                    { 7, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4132), 2, 3, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4133) },
+                    { 8, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4134), 4, 3, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4135) },
+                    { 9, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4136), 1, 4, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4137) },
+                    { 10, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4138), 2, 4, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4139) },
+                    { 11, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4140), 5, 4, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4141) },
+                    { 12, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4142), 1, 5, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4143) },
+                    { 13, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4144), 2, 5, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4144) },
+                    { 14, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4189), 6, 5, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4190) },
+                    { 15, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4191), 3, 6, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4192) },
+                    { 16, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4193), 4, 6, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4194) },
+                    { 17, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4195), 5, 6, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4196) },
+                    { 18, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4197), 6, 6, false, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4198) },
+                    { 19, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4199), 7, 6, true, "unknow", new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4200) }
                 });
 
             migrationBuilder.CreateIndex(

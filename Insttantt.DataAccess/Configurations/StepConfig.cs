@@ -25,13 +25,18 @@ namespace Insttantt.DataAccess.Configurations
                 .HasMaxLength(50)
                 .IsRequired();
 
-            //builder.HasData(
-            //    new Step() { Id=1, Code = "STP-0001", Name = "Formulario Usuario", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new Step() { Id=2, Code = "STP-0002", Name = "Consumir Servicio Externo", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new Step() { Id=3, Code = "STP-0003", Name = "Enviar Email", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new Step() { Id=4, Code = "STP-0004", Name = "Enviar Valores", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new Step() { Id=5, Code = "STP-0005", Name = "Ejecutar Ecuación", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now }
-            //    );
+            builder.Property(x => x.Url)
+                .HasMaxLength(200)
+                .IsRequired();
+
+            builder.HasData(
+                new Step() { Id = 1, Code = "STP-0001", Name = "Enviar Valores", Url = "https://localhost:7285/api/Parameters/inputparameters", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
+                new Step() { Id = 2, Code = "STP-0002", Name = "Sumar", Url = "https://localhost:7285/api/Operation/adittion", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
+                new Step() { Id = 3, Code = "STP-0003", Name = "Restar", Url = "https://localhost:7285/api/Operation/subtraction", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
+                new Step() { Id = 4, Code = "STP-0004", Name = "Multiplicar", Url = "https://localhost:7285/api/Operation/multiplication", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
+                new Step() { Id = 5, Code = "STP-0005", Name = "Dividir", Url = "https://localhost:7285/api/Operation/division", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
+                new Step() { Id = 6, Code = "STP-0006", Name = "Operacion Compuesta", Url = "https://localhost:7285/api/Operation/compound", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now }
+                );
         }
     }
 }

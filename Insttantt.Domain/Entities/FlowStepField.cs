@@ -10,7 +10,6 @@ namespace Insttantt.Domain.Entities
     {
         public int IdField { get; set; }
         public int IdFlowStep { get; set; }
-        public string DefaultValue { get; set; } = "";
         public Field Field { get; set; }
         public FlowStep FlowStep { get; set; }
         public bool IsOutput { get; set; }

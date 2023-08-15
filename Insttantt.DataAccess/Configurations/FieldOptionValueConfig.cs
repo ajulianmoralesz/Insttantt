@@ -26,16 +26,6 @@ namespace Insttantt.DataAccess.Configurations
                 .IsRequired();
 
             builder.HasOne(x => x.Field).WithMany(x=> x.fieldOptionValues).HasPrincipalKey(x=> x.Id).HasForeignKey(x=>x.IdField).HasConstraintName("FK_FieldOptionValue_Field");
-
-            //builder.HasData(
-            //    new FieldOptionValue() { Id=1, IdField = 5, Value = "CC", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=2, IdField = 5, Value = "NIT", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=3, IdField = 5, Value = "TI", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=4, IdField = 9, Value = "GET", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=5, IdField = 9, Value = "POST", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=6, IdField = 9, Value = "PUT", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now },
-            //    new FieldOptionValue() { Id=7, IdField = 9, Value = "DELETE", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now }
-            //    );
         }
     }
 }

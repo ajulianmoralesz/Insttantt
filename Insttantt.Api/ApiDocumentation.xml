@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Insttantt.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Insttantt.Api.Controllers.FieldController.GetFields">
+            <summary>
+            Obtiene una lista de todos los campos disponibles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowController.GetFlows">
+            <summary>
+            Obtiene una lista de todos los flujos disponibles para ejecutar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowController.CreateFlow(Insttantt.Application.Bussines.Flows.Commands.Creates.CreateFlowCommand)">
+            <summary>
+            Permite crear un flujo con todas sus configuraciones
+            </summary>
+            <param name="flowCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowExecutionController.ExecuteFlow">
+            <summary>
+            Obtiene una lista de todas las ejecucion de flujos disponibles
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowExecutionController.ExecuteFlow(Insttantt.Application.Bussines.FlowExecutions.Commands.Creates.ExecuteFlowCommand)">
+            <summary>
+            Inicializa un nuevo flujo o continua un flujo que ya estaba inicializado
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowExecutionController.GetFlowExecutionVariables(System.Int32)">
+            <summary>
+            Obtiene las variables resultado de una ejecución parcial o total de un flujo
+            </summary>
+            <param name="idExecution">Id de la ejecución</param>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.FlowStepController.GetPendingSteps(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Obtiene la lista de los pasos pendientes en una ejecucion. Si hay un Id de ejecucion retorna una lista con los pasos pendientes del flujo. Si no se envia un id de ejeución de ejecucion lista todos los pasos de un flujo
+            </summary>
+            <param name="idFlow">Id del flujo</param>
+            <param name="idExecution">Id de la ejecucion</param>
+            <returns></returns>
+        </member>
+        <member name="M:Insttantt.Api.Controllers.StepController.GetSteps">
+            <summary>
+            Obtiene un lista de todos los pasos disponibles para la creación de un flujo
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -22,11 +22,6 @@ namespace Insttantt.DataAccess.Configurations
                 .HasColumnType("int")
                 .IsRequired();
 
-            builder.Property(x => x.IsDone)
-                .HasColumnType("bit")
-                .HasDefaultValue(false)
-                .IsRequired();
-
             builder.HasOne(x => x.Flow).WithMany(x => x.Executions).HasPrincipalKey(x=> x.Id).HasForeignKey(x=> x.IdFlow).HasConstraintName("FK_FlowExecution_Flow");
         }
     }

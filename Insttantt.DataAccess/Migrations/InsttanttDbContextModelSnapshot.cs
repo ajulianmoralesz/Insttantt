@@ -72,10 +72,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0001",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1167),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3266),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1176),
-                            Name = "Primer Nombre"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3274),
+                            Name = "Valor X"
                         },
                         new
                         {
@@ -83,10 +83,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0002",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1178),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3307),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1179),
-                            Name = "Segundo Nombre"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3307),
+                            Name = "Valor Y"
                         },
                         new
                         {
@@ -94,10 +94,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0003",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1181),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3309),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1181),
-                            Name = "Primer Apellido"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3310),
+                            Name = "Resultado Suma"
                         },
                         new
                         {
@@ -105,10 +105,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0004",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1183),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3311),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1184),
-                            Name = "Segundo Apellido"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3312),
+                            Name = "Resultado Resta"
                         },
                         new
                         {
@@ -116,10 +116,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0005",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1185),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3313),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1186),
-                            Name = "Tipo de Documento"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3314),
+                            Name = "Resultado Multiplicación"
                         },
                         new
                         {
@@ -127,10 +127,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0006",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1188),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3315),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1188),
-                            Name = "Numero Documento"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3316),
+                            Name = "Resultado División"
                         },
                         new
                         {
@@ -138,175 +138,10 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "F-0007",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1190),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3317),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1191),
-                            Name = "Correo Electronico"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Active = true,
-                            Code = "F-0008",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1192),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1193),
-                            Name = "Url"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Active = true,
-                            Code = "F-0009",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1195),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1196),
-                            Name = "Metodo"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Active = true,
-                            Code = "F-00010",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1197),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1198),
-                            Name = "Body"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Active = true,
-                            Code = "F-0011",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1200),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1200),
-                            Name = "Cliente SMTP"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Active = true,
-                            Code = "F-0012",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1202),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1203),
-                            Name = "Puerto"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Active = true,
-                            Code = "F-0013",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1204),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1205),
-                            Name = "Email From"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Active = true,
-                            Code = "F-0014",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1207),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1207),
-                            Name = "Password"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Active = true,
-                            Code = "F-0015",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1209),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1210),
-                            Name = "Mensaje"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Active = true,
-                            Code = "F-0016",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1211),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1212),
-                            Name = "Asunto"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Active = true,
-                            Code = "F-0017",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1214),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1214),
-                            Name = "Valor X"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Active = true,
-                            Code = "F-0018",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1216),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1217),
-                            Name = "Valor Y"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Active = true,
-                            Code = "F-0019",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1219),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1219),
-                            Name = "Resultado Suma"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            Active = true,
-                            Code = "F-0020",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1223),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1224),
-                            Name = "Resultado Resta"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            Active = true,
-                            Code = "F-0021",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1225),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1226),
-                            Name = "Resultado Multiplicación"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            Active = true,
-                            Code = "F-0022",
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1228),
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(1228),
-                            Name = "Resultado División"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(3318),
+                            Name = "Resultado Compuesta"
                         });
                 });
 
@@ -352,85 +187,6 @@ namespace Insttantt.DataAccess.Migrations
                     b.HasIndex("IdField");
 
                     b.ToTable("FieldOptionValue", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4791),
-                            IdField = 5,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4796),
-                            Value = "CC"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4798),
-                            IdField = 5,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4798),
-                            Value = "NIT"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4800),
-                            IdField = 5,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4800),
-                            Value = "TI"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4802),
-                            IdField = 9,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4802),
-                            Value = "GET"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4804),
-                            IdField = 9,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4804),
-                            Value = "POST"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4806),
-                            IdField = 9,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4806),
-                            Value = "PUT"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Active = true,
-                            CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4808),
-                            IdField = 9,
-                            ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 735, DateTimeKind.Local).AddTicks(4808),
-                            Value = "DELETE"
-                        });
                 });
 
             modelBuilder.Entity("Insttantt.Domain.Entities.Flow", b =>
@@ -474,6 +230,19 @@ namespace Insttantt.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Flow", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(7266),
+                            Description = "Flujo con operaciones matematicas que dependen de la primera entrada de variables",
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 957, DateTimeKind.Local).AddTicks(7269),
+                            Name = "Flujo de Prueba"
+                        });
                 });
 
             modelBuilder.Entity("Insttantt.Domain.Entities.FlowExecution", b =>
@@ -498,11 +267,6 @@ namespace Insttantt.DataAccess.Migrations
 
                     b.Property<int>("IdFlow")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDone")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
 
                     b.Property<string>("ModifiedBy")
                         .IsRequired()
@@ -611,6 +375,74 @@ namespace Insttantt.DataAccess.Migrations
                     b.HasIndex("IdStep");
 
                     b.ToTable("FlowStep", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9037),
+                            IdFlow = 1,
+                            IdStep = 1,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9041)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9043),
+                            IdFlow = 1,
+                            IdStep = 2,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9043)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9045),
+                            IdFlow = 1,
+                            IdStep = 3,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9045)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9046),
+                            IdFlow = 1,
+                            IdStep = 4,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9047)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9048),
+                            IdFlow = 1,
+                            IdStep = 5,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9049)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9050),
+                            IdFlow = 1,
+                            IdStep = 6,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 958, DateTimeKind.Local).AddTicks(9051)
+                        });
                 });
 
             modelBuilder.Entity("Insttantt.Domain.Entities.FlowStepField", b =>
@@ -632,12 +464,6 @@ namespace Insttantt.DataAccess.Migrations
                     b.Property<DateTime?>("CreatedOn")
                         .IsRequired()
                         .HasColumnType("datetime");
-
-                    b.Property<string>("DefaultValue")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasDefaultValue("");
 
                     b.Property<int>("IdField")
                         .HasColumnType("int");
@@ -664,6 +490,236 @@ namespace Insttantt.DataAccess.Migrations
                     b.HasIndex("IdFlowStep");
 
                     b.ToTable("FlowStepField", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4114),
+                            IdField = 1,
+                            IdFlowStep = 1,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4120)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4122),
+                            IdField = 2,
+                            IdFlowStep = 1,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4123)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4124),
+                            IdField = 1,
+                            IdFlowStep = 2,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4125)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4126),
+                            IdField = 2,
+                            IdFlowStep = 2,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4127)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4128),
+                            IdField = 3,
+                            IdFlowStep = 2,
+                            IsOutput = true,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4129)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4130),
+                            IdField = 1,
+                            IdFlowStep = 3,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4131)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4132),
+                            IdField = 2,
+                            IdFlowStep = 3,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4133)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4134),
+                            IdField = 4,
+                            IdFlowStep = 3,
+                            IsOutput = true,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4135)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4136),
+                            IdField = 1,
+                            IdFlowStep = 4,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4137)
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4138),
+                            IdField = 2,
+                            IdFlowStep = 4,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4139)
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4140),
+                            IdField = 5,
+                            IdFlowStep = 4,
+                            IsOutput = true,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4141)
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4142),
+                            IdField = 1,
+                            IdFlowStep = 5,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4143)
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4144),
+                            IdField = 2,
+                            IdFlowStep = 5,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4144)
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4189),
+                            IdField = 6,
+                            IdFlowStep = 5,
+                            IsOutput = true,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4190)
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4191),
+                            IdField = 3,
+                            IdFlowStep = 6,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4192)
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4193),
+                            IdField = 4,
+                            IdFlowStep = 6,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4194)
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4195),
+                            IdField = 5,
+                            IdFlowStep = 6,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4196)
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4197),
+                            IdField = 6,
+                            IdFlowStep = 6,
+                            IsOutput = false,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4198)
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Active = true,
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4199),
+                            IdField = 7,
+                            IdFlowStep = 6,
+                            IsOutput = true,
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(4200)
+                        });
                 });
 
             modelBuilder.Entity("Insttantt.Domain.Entities.Step", b =>
@@ -705,6 +761,11 @@ namespace Insttantt.DataAccess.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Step", (string)null);
@@ -716,10 +777,11 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "STP-0001",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6132),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5701),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6146),
-                            Name = "Formulario Usuario"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5704),
+                            Name = "Enviar Valores",
+                            Url = "https://localhost:7285/api/Parameters/inputparameters"
                         },
                         new
                         {
@@ -727,10 +789,11 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "STP-0002",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6148),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5705),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6149),
-                            Name = "Consumir Servicio Externo"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5706),
+                            Name = "Sumar",
+                            Url = "https://localhost:7285/api/Operation/adittion"
                         },
                         new
                         {
@@ -738,10 +801,11 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "STP-0003",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6150),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5707),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6151),
-                            Name = "Enviar Email"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5708),
+                            Name = "Restar",
+                            Url = "https://localhost:7285/api/Operation/subtraction"
                         },
                         new
                         {
@@ -749,10 +813,11 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "STP-0004",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6152),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5709),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6153),
-                            Name = "Enviar Valores"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5710),
+                            Name = "Multiplicar",
+                            Url = "https://localhost:7285/api/Operation/multiplication"
                         },
                         new
                         {
@@ -760,10 +825,23 @@ namespace Insttantt.DataAccess.Migrations
                             Active = true,
                             Code = "STP-0005",
                             CreatedBy = "unknow",
-                            CreatedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6154),
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5711),
                             ModifiedBy = "unknow",
-                            ModifiedOn = new DateTime(2023, 8, 12, 16, 19, 7, 737, DateTimeKind.Local).AddTicks(6155),
-                            Name = "Ejecutar Ecuación"
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5712),
+                            Name = "Dividir",
+                            Url = "https://localhost:7285/api/Operation/division"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Active = true,
+                            Code = "STP-0006",
+                            CreatedBy = "unknow",
+                            CreatedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5713),
+                            ModifiedBy = "unknow",
+                            ModifiedOn = new DateTime(2023, 8, 14, 20, 12, 21, 959, DateTimeKind.Local).AddTicks(5714),
+                            Name = "Operacion Compuesta",
+                            Url = "https://localhost:7285/api/Operation/compound"
                         });
                 });
 

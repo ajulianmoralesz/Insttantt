@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insttantt.Api", "Insttantt.Api\Insttantt.Api.csproj", "{910054D4-01DA-4BAE-A0A3-F55C9A3B2250}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insttantt.Api", "Insttantt.Api\Insttantt.Api.csproj", "{910054D4-01DA-4BAE-A0A3-F55C9A3B2250}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2CEDF05E-A5FB-414B-960A-9E31D9C9DC81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{595025EA-66D1-48D8-84DA-05F865C251AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insttantt.Application", "Insttant.Application\Insttantt.Application.csproj", "{87DAD568-33DD-4635-AF3C-0C2C8FB0F584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insttantt.Application", "Insttant.Application\Insttantt.Application.csproj", "{87DAD568-33DD-4635-AF3C-0C2C8FB0F584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insttantt.DataAccess", "Insttantt.DataAccess\Insttantt.DataAccess.csproj", "{2E5928B4-4555-4FDA-B236-711A96190B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insttantt.DataAccess", "Insttantt.DataAccess\Insttantt.DataAccess.csproj", "{2E5928B4-4555-4FDA-B236-711A96190B7B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E5F790CF-61E2-4E42-97D8-38E80B9E1D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insttantt.Domain", "Insttantt.Domain\Insttantt.Domain.csproj", "{82EBDC78-1B83-4FDD-8271-08AD331F5E9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insttantt.Domain", "Insttantt.Domain\Insttantt.Domain.csproj", "{82EBDC78-1B83-4FDD-8271-08AD331F5E9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Steps", "Steps", "{6E8118B2-1FEB-491D-9196-9FF3DF38C093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insttantt.Steps", "Insttantt.Steps\Insttantt.Steps.csproj", "{0BC42611-0EF8-4568-8A6F-67EB88407EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{82EBDC78-1B83-4FDD-8271-08AD331F5E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82EBDC78-1B83-4FDD-8271-08AD331F5E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82EBDC78-1B83-4FDD-8271-08AD331F5E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC42611-0EF8-4568-8A6F-67EB88407EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC42611-0EF8-4568-8A6F-67EB88407EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC42611-0EF8-4568-8A6F-67EB88407EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC42611-0EF8-4568-8A6F-67EB88407EA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{87DAD568-33DD-4635-AF3C-0C2C8FB0F584} = {595025EA-66D1-48D8-84DA-05F865C251AE}
 		{2E5928B4-4555-4FDA-B236-711A96190B7B} = {2CEDF05E-A5FB-414B-960A-9E31D9C9DC81}
 		{82EBDC78-1B83-4FDD-8271-08AD331F5E9E} = {E5F790CF-61E2-4E42-97D8-38E80B9E1D77}
+		{0BC42611-0EF8-4568-8A6F-67EB88407EA5} = {6E8118B2-1FEB-491D-9196-9FF3DF38C093}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5BEF120-81CF-4108-9DD3-3F9858593BC8}

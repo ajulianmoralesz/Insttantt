@@ -25,6 +25,8 @@ namespace Insttantt.DataAccess.Configurations
             builder.Property(x => x.Description)
                 .HasMaxLength(200)
                 .IsRequired(false);
+
+            builder.HasData(new Flow() { Id = 1, Name = "Flujo de Prueba", Description="Flujo con operaciones matematicas que dependen de la primera entrada de variables", Active = true, CreatedBy = "unknow", CreatedOn = DateTime.Now, ModifiedBy = "unknow", ModifiedOn = DateTime.Now });
              
         }
     }

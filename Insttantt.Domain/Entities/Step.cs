@@ -10,6 +10,7 @@ namespace Insttantt.Domain.Entities
     {
         public string Code { get; set; } = "";
         public string Name { get; set; } = "";
+        public string Url { get; set; } = "";
         public IList<FlowStep> FlowSteps { get; set; } = new List<FlowStep>();
     }
 }

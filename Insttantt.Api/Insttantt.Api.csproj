@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>69e1f371-c1eb-4ab9-a7b6-57d9db08f6a9</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>ApiDocumentation.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +26,10 @@
     <ProjectReference Include="..\Insttant.Application\Insttantt.Application.csproj" />
     <ProjectReference Include="..\Insttantt.DataAccess\Insttantt.DataAccess.csproj" />
     <ProjectReference Include="..\Insttantt.Domain\Insttantt.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attributes\" />
   </ItemGroup>
 
 </Project>

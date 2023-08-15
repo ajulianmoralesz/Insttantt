@@ -1,6 +1,6 @@
 ﻿using Insttant.DataAccess.Repositories;
 using Insttantt.Application.Bussines.Flows.Commands.Creates;
-using Insttantt.Application.Bussines.Flows.Commands.Creates.Models;
+using Insttantt.Application.Bussines.Models;
 using Insttantt.Application.Handlers.ResponseHandlers;
 using Insttantt.Domain.Entities;
 using MediatR;
@@ -55,7 +55,7 @@ namespace Insttantt.Application.Bussines.FlowSteps.Commands.Creates
                 return stepInput.Fields.Select(x => new FlowStepField()
                 {
                     IdField =  x.IdField,
-                    DefaultValue = x.Value,
+                    IsOutput = x.IsOutput,
                     Active = true,
                     CreatedBy = "user",
                     CreatedOn = DateTime.Now,

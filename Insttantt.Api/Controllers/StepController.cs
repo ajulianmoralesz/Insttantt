@@ -8,6 +8,10 @@ namespace Insttantt.Api.Controllers
     [ApiController]
     public class StepController : CustomBaseController
     {
+        /// <summary>
+        /// Obtiene un lista de todos los pasos disponibles para la creación de un flujo
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetSteps()
         {

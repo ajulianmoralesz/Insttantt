@@ -1,7 +1,5 @@
 ﻿using Insttantt.Application.Bussines.Flows.Commands.Creates;
 using Insttantt.Application.Bussines.Flows.Queries;
-using Insttantt.Application.Bussines.Weather.Queries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Insttantt.Api.Controllers
@@ -10,6 +8,10 @@ namespace Insttantt.Api.Controllers
     [ApiController]
     public class FlowController : CustomBaseController
     {
+        /// <summary>
+        /// Obtiene una lista de todos los flujos disponibles para ejecutar
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetFlows()
         {
@@ -17,6 +19,11 @@ namespace Insttantt.Api.Controllers
             return HandleResult(result.Result, result.ErrorProvider);
         }
 
+        /// <summary>
+        /// Permite crear un flujo con todas sus configuraciones
+        /// </summary>
+        /// <param name="flowCommand"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> CreateFlow(CreateFlowCommand flowCommand)
         {

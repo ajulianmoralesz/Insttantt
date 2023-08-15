@@ -8,6 +8,10 @@ namespace Insttantt.Api.Controllers
     [ApiController]
     public class FieldController : CustomBaseController
     {
+        /// <summary>
+        /// Obtiene una lista de todos los campos disponibles
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetFields()
         {

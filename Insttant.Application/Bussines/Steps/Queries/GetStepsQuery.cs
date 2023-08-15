@@ -2,18 +2,10 @@
 using AutoMapper.QueryableExtensions;
 using Insttant.DataAccess.Repositories;
 using Insttantt.Application.Bussines.Steps.DTO;
-using Insttantt.Application.Bussines.Weather.Queries;
 using Insttantt.Application.Handlers.ResponseHandlers;
 using Insttantt.Domain.Entities;
-using Insttantt.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Insttantt.Application.Bussines.Steps.Queries
 {

@@ -19,7 +19,22 @@ builder.Services.AddApplication();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(opt =>
+{
+    opt.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo()
+    {
+        Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+        {
+            Name = "Arnold Julian Morales Zapata",
+            Email = "a_julianmorales@hotmail.com"
+        },
+        Version = "v1",
+        Title = "Prueba Tecnica Insttantt",
+        Description = "Portafolio de Apis para creación y ejecucion de flujos dinamicos"
+    });
+    var filePath = Path.Combine(System.AppContext.BaseDirectory, "ApiDocumentation.xml");
+    opt.IncludeXmlComments(filePath);
+});
 
 var app = builder.Build();
 
