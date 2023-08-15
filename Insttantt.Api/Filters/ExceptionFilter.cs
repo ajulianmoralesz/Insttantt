@@ -22,7 +22,7 @@ namespace Insttantt.Api.Filters
 
         private void HandleCustomValidationException(ExceptionContext context, CustomValidationException exception)
         {
-            context.Result = new ObjectResult(new { mensaje = exception.Errors.ElementAt(0).Value.FirstOrDefault() })
+            context.Result = new ObjectResult(new { messages = exception.Errors.Values })
             {
                 StatusCode = StatusCodes.Status400BadRequest
             };
@@ -31,7 +31,7 @@ namespace Insttantt.Api.Filters
 
         private void HandleDefaultException(ExceptionContext context)
         {
-            context.Result = new ObjectResult(new { mensaje = context.Exception.Message })
+            context.Result = new ObjectResult(new { message = context.Exception.Message })
             {
                 StatusCode = StatusCodes.Status500InternalServerError
             };

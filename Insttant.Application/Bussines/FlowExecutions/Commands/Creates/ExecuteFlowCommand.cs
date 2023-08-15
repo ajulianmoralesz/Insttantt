@@ -56,21 +56,8 @@ namespace Insttantt.Application.Bussines.FlowExecutions.Commands.Creates
                 else
                 {
                     executionFlow = (await _sender.Send(new CreateFlowExecutionCommand() { IdFlow = request.IdFlow })).Result;
-                }
-                if(executionFlow == null)
-                {
-                    response.ErrorProvider.AddError("400", "It is not possible to create or find a execution with the information provided.");
-                    return response;
-                }
-                
+                }                
                 var pendingSteps = (await _sender.Send(new GetPendingStepsQuery() { IdExecution = request.IdExecution, IdFlow = request.IdFlow })).Result;
-
-                if(pendingSteps.Count <= 0)
-                {
-                    response.ErrorProvider.AddWarning("000", "The flow has already been fully executed. No steps available to run");
-                    return response;
-                }
-
                 #region Get Saved and New Variables
                 var dictInputs = (await _sender.Send(new GetExecutionVariablesQuery() { IdExecution = request.IdExecution })).Result;
                 foreach (var field in request.Fields)
@@ -103,7 +90,7 @@ namespace Insttantt.Application.Bussines.FlowExecutions.Commands.Creates
                 }
                 if(taskList.Count <= 0)
                 {
-                    response.ErrorProvider.AddWarning("000", "It is not possible to execute any step with the information provided");
+                    response.ErrorProvider.AddWarning("400", "It is not possible to execute any step with the information provided");
                     return response;
                 }
                 var result = await Task.WhenAll(taskList);

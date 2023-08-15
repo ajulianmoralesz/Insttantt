@@ -41,7 +41,7 @@ namespace Insttantt.Api.Controllers
         /// </summary>
         /// <param name="idExecution">Id de la ejecución</param>
         /// <returns></returns>
-        [HttpPost("getexecutionvariables", Name = "GetFlowExecutionVariables")]
+        [HttpGet("getexecutionvariables", Name = "GetFlowExecutionVariables")]
         public async Task<IActionResult> GetFlowExecutionVariables(int idExecution)
         {
             var result = await Mediator.Send(new GetExecutionVariablesQuery() { IdExecution = idExecution});
