@@ -2,6 +2,8 @@ using Insttantt.Api.Filters;
 using Insttantt.DataAccess;
 using Insttantt.Application;
 using Newtonsoft.Json;
+using Microsoft.Extensions.Configuration;
+using Insttantt.Domain.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,7 @@ builder.Services.AddControllers(mvcOpts =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 });
-
+builder.Services.Configure<MongoConfiguration>(builder.Configuration.GetSection("MongoConfiguration"));
 builder.Services.AddDataAccess(builder.Configuration);
 builder.Services.AddApplication();
 

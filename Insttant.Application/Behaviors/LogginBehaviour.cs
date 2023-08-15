@@ -1,4 +1,7 @@
-﻿using MediatR;
+﻿using Insttantt.DataAccess.Repositories;
+using Insttantt.Domain.Entities.Trace;
+using Insttantt.Domain.Models;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,34 +15,42 @@ namespace Insttantt.Application.Behaviors
     {
         //Inject Log and Inconsistencies Service
         private readonly Stopwatch _timer;
-        public LogginBehaviour()
+        private readonly IMongoRepository<InsttanttLog> _logRepository;
+        private readonly IMongoRepository<InsttanttInconsistency> _inconsistencyRepository;
+        public LogginBehaviour(IMongoRepository<InsttanttLog> logRepository, IMongoRepository<InsttanttInconsistency> inconsistencyRepository)
         {
             _timer = new Stopwatch();
+            _logRepository = logRepository;
+            _inconsistencyRepository = inconsistencyRepository;
         }
 
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
             var requestName = typeof(TRequest).Name;
-            var message = string.Empty;
+            var properties = typeof(TRequest).GetProperties().Select(x=> new TraceProperty { Name = x.Name, Value = Convert.ToString(x.GetValue(request))}).ToList();
             Exception? exc = null;
             TResponse? response = default(TResponse);
             _timer.Start();
             try
             {
                 response = await next();
-                message = $"Request {requestName} is OK!";
             }
             catch (Exception ex)
             {
                 exc = ex;
-                message = $"Request {requestName} have unhadled exceptions : {ex.Message}!";
             }
             finally
             {                
                 _timer.Stop();
-                Console.WriteLine($"{message} : Elapse Time: {_timer.ElapsedMilliseconds}ms");
                 if (exc != null)
+                {
+                    await _inconsistencyRepository.Insert(new InsttanttInconsistency() { ErrorMessage = exc.Message, ExecutionTime = _timer.ElapsedMilliseconds, Method = requestName, Properties = properties });
                     throw exc;
+                }                    
+                else
+                {
+                    await _logRepository.Insert(new InsttanttLog() { Message = "Request is OK!", ExecutionTime = _timer.ElapsedMilliseconds, Method = requestName, Properties = properties });
+                }
             }
             return response;
         }

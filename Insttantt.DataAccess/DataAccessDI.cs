@@ -1,7 +1,9 @@
 ﻿using Insttant.DataAccess.Repositories;
 using Insttantt.DataAccess.DbContexts;
 using Insttantt.DataAccess.Repositories;
+using Insttantt.Domain.Configurations;
 using Insttantt.Domain.Entities;
+using Insttantt.Domain.Entities.Trace;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +19,10 @@ namespace Insttantt.DataAccess
                 b => b.MigrationsAssembly(typeof(InsttanttDbContext).Assembly.FullName)), ServiceLifetime.Transient);
 
             services.AddScoped<IInsttanttDbContext>(provider => provider.GetService<InsttanttDbContext>());
+
+            services.AddTransient<IMongoRepository<InsttanttLog>, MongoRepository<InsttanttLog>>();
+            services.AddTransient<IMongoRepository<InsttanttInconsistency>, MongoRepository<InsttanttInconsistency>>();
+
 
             services.AddTransient<IRepository<Step>, Repository<Step>>();
             services.AddTransient<IRepository<Field>, Repository<Field>>();
