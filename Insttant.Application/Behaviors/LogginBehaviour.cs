@@ -10,7 +10,7 @@ namespace Insttantt.Application.Behaviors
 {
     public  class LogginBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : MediatR.IRequest<TResponse>
     {
-
+        //Inject Log and Inconsistencies Service
         private readonly Stopwatch _timer;
         public LogginBehaviour()
         {
